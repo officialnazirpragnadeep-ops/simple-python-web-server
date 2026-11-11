@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About the Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 3rem 1.25rem;
+            line-height: 1.6;
+            color: #172033;
+            background: #f7f9fc;
+        }
+        main {
+            background: white;
+            border: 1px solid #e3e8f0;
+            border-radius: 14px;
+            padding: 2rem;
+        }
+        code {
+            background: #eef2f7;
+            padding: 0.15rem 0.35rem;
+            border-radius: 4px;
+        }
+        a { color: #1756a9; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>About this server</h1>
+        <p>
+            The server accepts a TCP connection, reads the HTTP request line,
+            chooses a route, and sends an HTTP response containing an HTML page.
+        </p>
+        <h2>Supported responses</h2>
+        <ul>
+            <li><strong>200 OK:</strong> the requested page exists.</li>
+            <li><strong>404 Not Found:</strong> the path is not registered.</li>
+            <li><strong>405 Method Not Allowed:</strong> the server supports GET only.</li>
+        </ul>
+        <p><a href="/">&larr; Back to home</a></p>
+    </main>
+</body>
+</html>

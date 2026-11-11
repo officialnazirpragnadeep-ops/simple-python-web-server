@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Computer Networks Project</title>
+    <style>
+        :root { color-scheme: light; }
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 3rem 1.25rem;
+            line-height: 1.6;
+            color: #172033;
+            background: #f7f9fc;
+        }
+        main {
+            background: white;
+            border: 1px solid #e3e8f0;
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px rgba(23, 32, 51, 0.07);
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.35rem 0.7rem;
+            border-radius: 999px;
+            background: #e8f1ff;
+            color: #1756a9;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        code {
+            background: #eef2f7;
+            padding: 0.15rem 0.35rem;
+            border-radius: 4px;
+        }
+        a { color: #1756a9; }
+    </style>
+</head>
+<body>
+    <main>
+        <p class="badge">HTTP over TCP</p>
+        <h1>Simple Python Web Server</h1>
+        <p>
+            This page was sent by a web server written using Python's
+            <code>socket</code> module. The browser connected to a TCP port,
+            sent an HTTP request, and received an HTTP response.
+        </p>
+
+        <h2>Try these routes</h2>
+        <ul>
+            <li><a href="/">Home page</a> &mdash; returns <strong>200 OK</strong></li>
+            <li><a href="/about">About page</a> &mdash; returns <strong>200 OK</strong></li>
+            <li><a href="/does-not-exist">Missing page</a> &mdash; returns <strong>404 Not Found</strong></li>
+        </ul>
+
+        <p><a href="/about">Read the project explanation &rarr;</a></p>
+    </main>
+</body>
+</html>
